@@ -17,6 +17,6 @@ inp.on("close", () => {
 
   console.log(userInput[0]);
   console.log(userInput[1]);
-
+  console.log(userInput[2]);
   //end-here
 });

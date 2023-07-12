@@ -15,8 +15,11 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+  let meters = parseInt(userInput *1000);
+  console.log(meters);
+  let centimeters = parseInt(userInput * 100000);
+  console.log(centimeters);
+  let result = (meters && centimeters);
 
   //end-here
 });

@@ -14,9 +14,13 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+  let result1= parseInt(userInput[0]);
+ userInput.forEach((result1) => {
+    console.log(userInput*3);
+});
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+ 
+  
 
   //end-here
 });

@@ -15,8 +15,10 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+  let length = parseInt(userInput[0]);
+  let breadth = parseInt(userInput[1]);
+let area = (length * breadth);
+console.log(area);
 
   //end-here
 });

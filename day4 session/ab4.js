@@ -14,9 +14,10 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+  let c = parseInt(userInput.join());
+  f=  (((c*1.8)+32).toFixed(2));
+  console.log(f);
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
 
   //end-here
 });

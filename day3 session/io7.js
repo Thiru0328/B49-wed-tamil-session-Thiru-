@@ -15,7 +15,7 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-  console.log(userInput);
+  console.log(userInput[0].split('').join(' '));
 
   //end-here
 });

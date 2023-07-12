@@ -15,8 +15,14 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+  
+let a= parseInt(userInput[0]);
+//console.log(a);
+
+let result = (0.25*((3**0.5)*(a**2)))
+
+console.log(result.toFixed(2));
+
 
   //end-here
 });

@@ -14,9 +14,16 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+  //let A = parseInt(userInput.join());
+ // let B = parseInt(userInput.join());
+  //console.log(A);
+  //console.log(userInput)
+ let a= parseFloat(userInput[0])
+  let b= parseFloat(userInput[1])
+  let c= (a+b);
+  result = console.log(Math.round(c));
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+
 
   //end-here
 });

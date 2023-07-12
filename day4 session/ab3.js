@@ -14,9 +14,11 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+let radius = parseFloat(userInput[0]);
+let circumference = 2*(22/7)* radius;
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+  console.log(circumference.toFixed(2));
+  
 
   //end-here
 });

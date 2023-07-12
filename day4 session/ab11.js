@@ -14,9 +14,10 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+  let length= parseFloat(userInput[0]);
+  let breadth = parseFloat(userInput[1]);
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+  console.log((length * breadth).toFixed(0));
 
   //end-here
 });

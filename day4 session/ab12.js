@@ -15,8 +15,15 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
+  a=parseInt(userInput[0]);
+   b=parseInt(userInput[1]);
+    c=parseInt(userInput[2]);
+    if (a>=b && a>=c) {
+        console.log(a);}
+    else  if  (b>=a && b>=c) {
+        console.log(b);}
+        else {
+            console.log(c);} 
 
   //end-here
 });

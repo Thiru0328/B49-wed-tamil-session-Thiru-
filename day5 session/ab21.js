@@ -14,9 +14,10 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
+let result = userInput[0].split('');
+result.splice(5,1);
+console.log(result.length);
 
-  console.log(userInput[0]);
-  console.log(userInput[1]);
-
+  
   //end-here
 });
