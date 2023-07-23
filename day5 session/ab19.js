@@ -13,17 +13,25 @@ inp.on("line", (data) => {
 
 inp.on("close", () => {
   //start-here
- 
   //Your code goes here … replace the below line with your code logic 
-  let array = userInput[0].split(' ');
- // console.log(array);
-  let P = parseFloat(array[0]);
-  let T = parseFloat(array[1]);
-  let R = parseFloat(array[2]);
- // let R1= R/100;
- // console.log(R1);
-  let result = (P*T*R)/100; 
-   console.log(result.toFixed(2));
+
+let n = parseInt(userInput);
+
+function sum_Of_Digits(n) { // definition 
+  if (n < 0) n = -n 
+  let result = 0
+
+  while (n > 0) 
+   {
+    result += n % 10
+    n = Math.floor(n / 10)
+  }
+
+  return result
+}
+console.log(sum_Of_Digits(n)); // function call
+
+
 
   //end-here
 });

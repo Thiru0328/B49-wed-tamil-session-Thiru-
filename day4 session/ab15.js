@@ -15,11 +15,12 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
-let array = userInput[0].split(' ');
-  
-  let a= parseFloat(array[0]);
-  let n= parseFloat(array[1]);
-  console.log(a**n);
 
+let result1=userInput[0].split(' ');
+  let ans1=parseInt(result1[0]);
+  let ans2 = parseInt(result1[1]);
+
+for (i=0; i<ans2; i++){
+console.log(ans1);}
   //end-here
 });

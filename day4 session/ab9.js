@@ -14,12 +14,16 @@ inp.on("line", (data) => {
 inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
-let result = parseFloat(userInput[0]); 
-   if (((result%100==0) && (result%400 ==0)) || (result%4 == 0)){
+
+
+let str = userInput.join();
+  let result=parseInt(str);
+  if (((result%100!==0) && (result%4 ===0)) || (result%400 === 0)){
   console.log("Y");
   }
   else { 
-      console.log("N");}
+      console.log("N");
+  }
 
   //end-here
 });

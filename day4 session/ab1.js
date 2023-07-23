@@ -15,15 +15,15 @@ inp.on("close", () => {
   //start-here
   //Your code goes here … replace the below line with your code logic 
 
- let a=(parseInt(userInput[0]))
- if(a!=0){
- if (a%2==0){
-  console.log("even");
- } else if (a%2!=0){
-console.log("odd");
-} }
-else {
- console.log("zero")
+let result = parseInt(userInput);
+//console.log(result);
+if(result===0){
+    console.log('Zero');
+} else if (result%2===0) {
+    console.log('Even')
+} else if (result%2!==0){
+    console.log('Odd')
 }
+
   //end-here
 });

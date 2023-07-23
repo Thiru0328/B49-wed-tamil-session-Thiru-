@@ -13,17 +13,15 @@ inp.on("line", (data) => {
 
 inp.on("close", () => {
   //start-here
- 
   //Your code goes here … replace the below line with your code logic 
-  let array = userInput[0].split(' ');
- // console.log(array);
-  let P = parseFloat(array[0]);
-  let T = parseFloat(array[1]);
-  let R = parseFloat(array[2]);
- // let R1= R/100;
- // console.log(R1);
-  let result = (P*T*R)/100; 
-   console.log(result.toFixed(2));
+
+let result = parseInt(userInput);
+    for ( let i= result; i>=1; i--){
+        console.log(i);
+    }
+     
 
   //end-here
 });
+
+// ip -10

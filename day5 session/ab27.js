@@ -13,17 +13,24 @@ inp.on("line", (data) => {
 
 inp.on("close", () => {
   //start-here
- 
   //Your code goes here … replace the below line with your code logic 
-  let array = userInput[0].split(' ');
- // console.log(array);
-  let P = parseFloat(array[0]);
-  let T = parseFloat(array[1]);
-  let R = parseFloat(array[2]);
- // let R1= R/100;
- // console.log(R1);
-  let result = (P*T*R)/100; 
-   console.log(result.toFixed(2));
+
+var a=userInput[0].split("");
+  var even=[];
+  var odd=[];
+  for(i=0;i<a.length;i++){
+      if(parseInt(a[i])%2===0)
+        even.push(a[i]);
+    else
+    odd.push(a[i]);
+    
+  }
+  
+  even.sort();
+  odd.sort();
+  console.log(even.join(" "));
+  console.log(odd.join(" "));
+  //console.log(userInput);
 
   //end-here
 });
